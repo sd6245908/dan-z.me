@@ -1,0 +1,79 @@
+@import "../styles/base";
+
+.sidebar {
+  background: transparentize($primary, 0.1);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  z-index: 2;
+  width: 25%;
+  color: $white;
+
+  .sidebar-inner {
+    position: relative;
+    height: 100%;
+    overflow-y: auto;
+    padding: 45px 40px;
+    .my {
+      text-align: center;
+      .my-avatar img {
+        border: 6px solid $border_color_avatar;
+        border-radius: 50%;
+      }
+
+      .my-content {
+        margin-left: -40px;
+        margin-right: -40px;
+        text-transform: uppercase;
+        .my-name {
+          font-size: 2rem;
+          font-weight: 400;
+          margin: 0;
+        }
+        .my-title {
+          font-size: 1.1rem;
+          font-weight: 200;
+          text-transform: uppercase;
+          margin: 0;
+        }
+      }
+    }
+    .block {
+      line-height: 30px;
+      position: relative;
+    }
+    .block.main-nav {
+      margin: 45px -40px;
+      text-transform: uppercase;
+      font-size: 1rem;
+      line-break: 2;
+      ul {
+        list-style: none;
+        li {
+          padding: 10px 0;
+          a {
+            color: rgba(255, 255, 255, 0.6);
+            &:hover,
+            &:focus,
+            &:active {
+              color: white;
+              &:after {
+                content: " \f105 ";
+                padding-left: 3px;
+                font-family: FontAwesome;
+              }
+            }
+          }
+        }
+      }
+    }
+    .block.block-social {
+      text-transform: uppercase;
+      .social-icons a {
+        font-size: 1.7rem;
+        margin-right: 10px;
+      }
+    }
+  }
+}

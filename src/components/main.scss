@@ -1,0 +1,56 @@
+@import "../styles/base";
+
+.main {
+  .home-section {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background: url(/assets/images/meandfriend.png) top center no-repeat #bababa;
+    background-size: cover;
+    color: #fff;
+    padding-left: 110px;
+    padding-top: 130px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    &:before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: black;
+      opacity: 0.6;
+    }
+
+    .home-section-inner {
+      position: relative;
+      max-width: 840px;
+      margin-left: 25%;
+      .home-heading {
+        font-size: 4em;
+        font-weight: 500;
+      }
+      .home-subheading {
+        font-size: 3em;
+        font-weight: 300;
+      }
+      .home-buttons {
+        margin-top: 6rem;
+        animation-name: fadein;
+        -webkit-animation-name: fadein;
+        animation-duration: 2s;
+        -webkit-animation-duration: 2s;
+
+        a {
+          text-transform: uppercase;
+          font-size: 1.6em;
+          margin: 0 10px 30px 0;
+        }
+      }
+    }
+  }
+}
