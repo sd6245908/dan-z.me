@@ -1,5 +1,5 @@
-import React from "react";
 import "./styles/_base.scss";
+import React from "react";
 
 import LeftNav from "./components/leftnav";
 import Main from "./components/main";
@@ -7,8 +7,8 @@ import Main from "./components/main";
 function App() {
   return (
     <React.Fragment>
-      <LeftNav></LeftNav>
-      <Main></Main>
+      <LeftNav />
+      <Main />
     </React.Fragment>
   );
 }

@@ -1,8 +1,12 @@
 $white: white;
 $red: red;
+$black: #000;
 
 $primary: #192a56;
-$secondary: $red;
+// $primary:#69a4a4;
+$secondary: #273c75;
+// $secondary: #69a4a4;
+// $secondary: $red;
 $link_color: $primary;
 
-$border_color_avatar: #273c75;
+$border_color_avatar: $secondary;

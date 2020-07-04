@@ -1,0 +1,31 @@
+@import "../styles/base";
+.contact-section {
+  font-size: 1.2rem;
+  font-weight: 400;
+  .dl-vertical {
+    dt {
+      display: block;
+      width: 150px;
+      float: left;
+      clear: both;
+    }
+    dd {
+      display: block;
+      float: left;
+      a {
+        color: $primary;
+        font-size: inherit;
+        font-weight: 300;
+        i.fa {
+          width: inherit;
+          margin-right: 1rem;
+        }
+        &:hover,
+        &:focus,
+        &:active {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
