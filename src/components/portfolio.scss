@@ -11,8 +11,20 @@
     .timeline_element {
       position: relative;
       &:first-child {
-        // .timeline_element-date {
-        // }
+        display: block;
+        .timeline_element-date {
+          margin-top: 10px;
+          time {
+            margin-top: -10px;
+          }
+          &::after {
+            top: 0;
+          }
+        }
+        .timeline_element-date,
+        .timeline_element-contents {
+          padding-top: 0;
+        }
       }
       .timeline_element-date {
         position: absolute;
@@ -26,7 +38,10 @@
         text-align: right;
         font-style: italic;
         line-height: 30px;
-        border-right: 1px solid #ddd;
+        time {
+          display: block;
+        }
+        border-right: 1px dashed #ddd;
         &:after {
           content: " ";
           position: absolute;
@@ -60,14 +75,14 @@
             margin: 1rem 0;
             ul {
               list-style-type: circle;
-              padding-inline-start: 2.5rem;
+              padding-inline-start: 2rem;
             }
           }
           .project-tech-stack {
             margin-top: 2rem;
             .tech-title {
               font-size: 0.9rem;
-              font-weight: 300;
+              font-weight: 400;
               text-transform: uppercase;
               color: #666;
               padding-bottom: 0.5em;

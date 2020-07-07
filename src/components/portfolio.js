@@ -3,19 +3,19 @@ import React from "react";
 import Moment from "moment";
 let projects = [
   {
-    title: "E-Site",
+    title: "E-IMS",
     subtitle: "Computer Remarketing Specialist",
     role: "Full stack developer",
-    company: "Dance2Go Ltd.",
+    company: "E-Site Ltd.",
     start: "2020-01",
     end: "",
     image: "/assets/images/esite/landing.png",
     desc:
-      "E-Site is an Inventory Management System that allows to track the IT assets, suppliers as well as purchase and sales information. It serves as:",
+      "E-IMS is an Inventory Management System that allows to track the IT assets, suppliers as well as purchase and sales information. It serves as:",
     features: [
-      "Responsive landing page",
+      "Responsive company landing page",
       "Oauth2 Authentication",
-      "IT Asset,Stock,Supplier,Transaction management"
+      "IT Asset, Stock, Supplier, Transaction management"
     ],
     url: "https://dance2go.co.nz",
     techStack: "Reactjs,Nodejs,Sass,MongoDB,Expressjs,Docker",
@@ -73,7 +73,7 @@ let projects = [
     title: "IBM W3 Homepage",
     subtitle: "",
     role: "Senior Application Developer",
-    company: "Dance2Go Ltd.",
+    company: "IBM China",
     start: "2013-06",
     end: "2018-01",
     image: "/assets/images/ibmw3/Signin1-2.png",
@@ -92,10 +92,10 @@ let projects = [
   {
     title: "IBM 荟专享",
     subtitle: "",
-    company: "Dance2Go Ltd.",
+    company: "IBM China",
     start: "2018-04",
     end: "2018-05",
-    image: "/assets/images/dance2go.jpg",
+    image: "",
     desc: 'IBM "荟专享" is built on Wechat Mini Progrom Platform',
     features: [],
     url: "https://dance2go.co.nz",
@@ -105,7 +105,7 @@ let projects = [
   {
     title: "Bulk Utility Tool",
     subtitle: "",
-    company: "Dance2Go Ltd.",
+    company: "British Telecommunication",
     start: "2019-11",
     end: "2019-12",
     image: "",
@@ -117,14 +117,14 @@ let projects = [
     responsibilities: []
   },
   {
-    title: "Task Management System",
-    subtitle: "",
+    title: "TMS",
+    subtitle: "Neusoft",
     company: "Neusoft",
     start: "2009-10",
     end: "2011-11",
     image: "",
     desc:
-      "TMS is a system that tracks staff daily work. It involves planning, tracking, and reporting. . It's been a long time. My database skill improved a lot in this project. I wrote hundreds of SQL.",
+      "TMS is a task management system that tracks staff daily work. It involves planning, tracking, and reporting. . It's been a long time. My database skill improved a lot in this project. I wrote hundreds of SQL.",
     features: [],
     url: "https://dance2go.co.nz",
     techStack: "Java,Struts,Ibatis,Spring,JSP,Oracle",
@@ -150,9 +150,10 @@ const Portfolio = () => {
                   <time class="timeline_element-date-text">
                     {Moment(project.start).format("MMM YYYY")} -{" "}
                     {project.end === ""
-                      ? "Now"
+                      ? "PRESENT"
                       : Moment(project.end).format("MMM YYYY")}
                   </time>
+                  <small>{project.company}</small>
                 </div>
                 <div className="timeline_element-contents">
                   <div className="project-text">
