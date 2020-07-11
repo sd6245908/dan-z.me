@@ -18,7 +18,7 @@ const LeftNav = () => {
         <a className="my" href="/">
           <div className="my-avatar">
             <img
-              src={"/assets/images/dan.jpg"}
+              src={"/assets/images/Dan.jpg"}
               width="170"
               height="170"
               alt="Dan's Avatar"
