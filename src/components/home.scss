@@ -1,3 +1,5 @@
+@import "../styles/base";
+
 .home-section {
   position: fixed;
   top: 0;
@@ -5,7 +7,8 @@
   left: 0;
   right: 0;
   z-index: 1;
-  background: url(/assets/images/laptop-bg.jpg) top center no-repeat #bababa;
+  background: url(/assets/images/laptop-bg-small.png) top center no-repeat
+    #bababa;
   background-size: cover;
   color: #fff;
   padding-left: 110px;
@@ -21,6 +24,7 @@
     bottom: 0;
     background-color: black;
     opacity: 0.6;
+    background: url(/assets/images/laptop-bg-small.png) top center no-repeat;
   }
 
   .home-section-inner {
@@ -48,5 +52,27 @@
         margin: 0 10px 30px 0;
       }
     }
+  }
+  @include phone {
+    position: relative;
+    padding: 40px 20px;
+    background: 0 0;
+    font-size: 10px;
+    &:before {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      display: block;
+      width: auto;
+      background-position: -600px;
+    }
+
+    .home-section-inner {
+      margin-left: 0;
+    }
+  }
+  @include tablet {
   }
 }

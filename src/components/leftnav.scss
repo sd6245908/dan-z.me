@@ -9,6 +9,7 @@
   z-index: 2;
   width: 25%;
   color: $white;
+  overflow: hidden;
 
   .sidebar-inner {
     position: relative;
@@ -49,9 +50,14 @@
       margin: 6rem -40px;
       text-transform: uppercase;
       font-size: 1rem;
-      line-break: 2;
+      // line-break: 2;
+      .navigation-extend-bar {
+        display: none;
+      }
       ul {
         list-style: none;
+        margin: 0;
+        // padding: 0;
         li {
           position: relative;
           padding: 10px 0;
@@ -92,6 +98,96 @@
         color: $white;
         font-size: 1.7rem;
         margin-right: 10px;
+      }
+    }
+  }
+  @include phone {
+    position: relative;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    width: auto;
+    .sidebar-inner {
+      overflow: initial;
+      height: auto;
+      padding: 40px 40px 0;
+
+      .block.main-nav {
+        font-size: 14px;
+        text-transform: uppercase;
+        line-height: 50px;
+        text-align: right;
+        margin: 20px -40px 0;
+        .navigation-extend-bar {
+          a.navigation-extend-button {
+            color: $white;
+            font-size: 20px;
+          }
+          .social-icons a {
+            color: $white;
+            font-size: 1.5rem;
+            margin-right: 0.5rem;
+          }
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          border-width: 1px 0;
+          padding: 0 20px;
+        }
+
+        ul li {
+          padding: 0 20px;
+          &.current a,
+          a:hover,
+          a:focus,
+          a:active {
+            &:after {
+              content: none;
+            }
+          }
+          &.current {
+            &:after {
+              content: none;
+            }
+          }
+        }
+        &.extended {
+          .navigation-extendable {
+            height: 200px;
+          }
+        }
+        .navigation-extendable {
+          height: 0;
+          -webkit-transition: 0.5s;
+          transition: 0.5s;
+        }
+      }
+      & > .block.block-social {
+        display: none;
+      }
+    }
+  }
+  @include tablet {
+    position: relative;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+  }
+}
+.home {
+  .sidebar {
+    @include phone {
+      .sidebar-inner {
+        padding-top: 0;
+        & > .my {
+          display: none;
+        }
+        .block.main-nav {
+          margin-top: 0;
+        }
       }
     }
   }

@@ -17,4 +17,12 @@
       // }
     }
   }
+  @include phone {
+    margin-left: 0;
+    .main-inner {
+      .main-section {
+        padding: 1.5rem;
+      }
+    }
+  }
 }

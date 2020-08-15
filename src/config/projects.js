@@ -33,6 +33,28 @@ const projects = [
     start: "2020-07",
     end: "2020-07",
     image: "/assets/images/clubphysio/landing.png",
+    desc: "A typical example of company website, featuring:",
+    features: [
+      "A Responsible Website",
+      "Customer Online Booking",
+      "the content can be easily edited from the browser by accessing the admin’s panel."
+    ],
+    url: "https://dance2go.co.nz",
+    techStack: "Wordpress",
+    responsibilities: [
+      "a SaaS platform for tour operators and activity providers, to manage their offers, customers, orders, and agents cooperation",
+      "a marketplace for end-customers to book the local tours and activities while or before the travelling."
+    ]
+  },
+
+  {
+    title: "Dance2Go",
+    subtitle: "Dancewear for every day at every moment through every step.",
+    role: "Web developer",
+    company: "Freelance",
+    start: "2019-11",
+    end: "2019-12",
+    image: "/assets/images/dance2go/landing.png",
     desc:
       "Dance2Go is a E-Commerce Website that sells dancewear. It serves both as:",
     features: [
@@ -70,28 +92,6 @@ const projects = [
   },
 
   {
-    title: "Dance2Go",
-    subtitle: "Dancewear for every day at every moment through every step.",
-    role: "Web developer",
-    company: "Dance2Go Ltd.",
-    start: "2019-11",
-    end: "2019-12",
-    image: "/assets/images/dance2go/landing.png",
-    desc:
-      "Dance2Go is a E-Commerce Website that sells dancewear. It serves both as:",
-    features: [
-      "Product Management System",
-      "Customer Online Shopping",
-      "Appoitment Booking System"
-    ],
-    url: "https://dance2go.co.nz",
-    techStack: "Javascript,PHP,HTMl,CSS3,jQuery, Wordpress,Woocommerce",
-    responsibilities: [
-      "a SaaS platform for tour operators and activity providers, to manage their offers, customers, orders, and agents cooperation",
-      "a marketplace for end-customers to book the local tours and activities while or before the travelling."
-    ]
-  },
-  {
     title: "IBM W3 Homepage",
     subtitle: "",
     role: "Senior Application Developer",
@@ -127,7 +127,7 @@ const projects = [
   {
     title: "Bulk Utility Tool",
     subtitle: "",
-    company: "British Telecommunication",
+    company: "B.T Dalian",
     start: "2019-11",
     end: "2019-12",
     image: "",
@@ -140,7 +140,7 @@ const projects = [
   },
   {
     title: "TMS",
-    subtitle: "Neusoft",
+    subtitle: "Neusoft Dalian",
     company: "Neusoft",
     start: "2009-10",
     end: "2011-11",
