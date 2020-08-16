@@ -16,9 +16,12 @@ const Portfolio = () => {
         <ul>
           {projects.map((project, i) => {
             return (
-              <li className="timeline_element timeline_element--now project">
+              <li
+                className="timeline_element timeline_element--now project"
+                key={i}
+              >
                 <div className="timeline_element-date">
-                  <time class="timeline_element-date-text">
+                  <time className="timeline_element-date-text">
                     {Moment(project.start).format("MMM YYYY")} -{" "}
                     {project.end === ""
                       ? "PRESENT"
@@ -28,7 +31,7 @@ const Portfolio = () => {
                 </div>
                 <div className="timeline_element-contents">
                   <div className="project-text">
-                    <a className="project-link">
+                    <a href="/portfolio" className="project-link">
                       <div className="project-title">{project.title}</div>
                       <div className="project-subtitle">{project.role}</div>
                     </a>
@@ -45,23 +48,31 @@ const Portfolio = () => {
                         })}
                       </ul>
                     </div>
-                    <a class="button primary">More Details</a>
+                    <a href="/portfolio" className="button primary">
+                      More Details
+                    </a>
                     <div className="project-tech-stack">
                       <h6 className="tech-title">Technologies</h6>
                       <ul className="tech-tags">
                         {project.techStack.split(",").map((tag, i) => {
                           return (
                             <li key={i}>
-                              <a className="button secondary">{tag}</a>
+                              <a href="/" className="button secondary">
+                                {tag}
+                              </a>
                             </li>
                           );
                         })}
                       </ul>
                     </div>
                   </div>
-                  <div className="project-image">
-                    <img src={project.image} />
-                  </div>
+                  {project.image ? (
+                    <div className="project-image">
+                      <img src={project.image} alt="project" />
+                    </div>
+                  ) : (
+                    ""
+                  )}
                 </div>
               </li>
             );
