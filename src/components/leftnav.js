@@ -4,8 +4,8 @@ import React, { useState, useEffect } from "react";
 
 const routes = [
   { title: "Portfolio", path: "/portfolio" },
-  { title: "My Offer", path: "/offer" },
-  { title: "My CV", path: "/cv" },
+  // { title: "My Offer", path: "/offer" },
+  { title: "My CV", path: "/assets/docs/Xiaoxu Zhou-CV.pdf" },
   { title: "Contact Me", path: "/contact" }
 ];
 

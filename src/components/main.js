@@ -6,8 +6,11 @@ import Portfolio from "./portfolio";
 import Offer from "./offer";
 import CV from "./cv";
 import Contact from "./contact";
+import ProjectDetails from "./projectdetails";
 
 const Main = () => {
+  // let match = useRouteMatch();
+
   return (
     <div className="main">
       <div className="main-inner">
@@ -18,6 +21,9 @@ const Main = () => {
             </Route>
             <Route exact path="/portfolio">
               <Portfolio />
+            </Route>
+            <Route path="/portfolio/:projectName">
+              <ProjectDetails />
             </Route>
             <Route path="/offer">
               <Offer />

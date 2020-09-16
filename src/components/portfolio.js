@@ -48,9 +48,17 @@ const Portfolio = () => {
                         })}
                       </ul>
                     </div>
-                    <a href="/portfolio" className="button primary">
-                      More Details
-                    </a>
+                    {project.btn.show ? (
+                      <a
+                        href={`/portfolio/${project.name}`}
+                        className="button primary"
+                      >
+                        {project.btn.text}
+                      </a>
+                    ) : (
+                      ""
+                    )}
+
                     <div className="project-tech-stack">
                       <h6 className="tech-title">Technologies</h6>
                       <ul className="tech-tags">
