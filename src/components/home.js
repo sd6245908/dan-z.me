@@ -15,8 +15,8 @@ const Home = () => {
             Portfolio
           </a>
           <br></br>
-          <a className="button primary" href="/offer">
-            My offer
+          <a className="button primary" href="/assets/docs/Xiaoxu Zhou-CV.pdf">
+            My CV
           </a>
         </div>
       </div>
