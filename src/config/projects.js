@@ -67,7 +67,7 @@ const projects = [
       "a SaaS platform for tour operators and activity providers, to manage their offers, customers, orders, and agents cooperation",
       "a marketplace for end-customers to book the local tours and activities while or before the travelling."
     ],
-    onlive: false,
+    onlive: true,
     btn: {
       show: true,
       type: "link",
